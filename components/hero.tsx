@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export default function Header() {
   return (
     <div className="gap-16 items-center">
-      <div className="flex flex-col items-start justify-start h-auto px-6 bg-background text-foreground max-w-3xl mx-auto ">
+      <div className="flex flex-col items-start justify-start h-auto px-6 bg-background text-foreground max-w-3xl mx-auto py-8">
         <h1 className="text-4xl font-bold mb-6">Bienvenido a Davar 📖✨</h1>
         <p className="text-lg mb-4">
           Descubre la <span className="font-semibold">Biblia</span> en su idioma original con una herramienta poderosa y fácil de usar.
@@ -20,7 +20,7 @@ export default function Header() {
           </li>
           <li className="flex items-center gap-x-2">
             <span>✅</span>
-            <strong>Comparación de versiones</strong> para enriquecer tu estudio
+            <strong>Diccionario</strong> para enriquecer tu estudio
           </li>
           <li className="flex items-center gap-x-2">
             <span>✅</span>

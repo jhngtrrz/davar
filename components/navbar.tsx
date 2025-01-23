@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 
 export default function Navbar() {
     return (
@@ -14,7 +12,7 @@ export default function Navbar() {
 
                 <div className="flex gap-4 items-center">
                     <ThemeSwitcher />
-                    {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
+                    {<HeaderAuth />}
                 </div>
             </div>
         </nav>
